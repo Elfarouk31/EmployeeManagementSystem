@@ -1,9 +1,11 @@
 using EmployeeManagement.Infrastructure.DbContextModel;
 using Microsoft.EntityFrameworkCore;
+using EmployeeManagement.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.ConfigurationInfrastructureServices(builder.Configuration);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -18,8 +18,8 @@ namespace EmployeeManagement.Domain.Entities
 		public string Email { get; set; }
 		public Department Department { get; set; }
 		public DateTime HireDate { get; set; }
-		
-		public bool Status { get; set; }
+		[Required, MaxLength(200)]
+		public string Status { get; set; }
 		public DateTime CreatedDate { get; set; }
 		public DateTime UpdatedDate { get; set; }
 		public DateTime DeletedDate { get; set; }
