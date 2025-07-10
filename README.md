@@ -4,9 +4,9 @@
 and Swagger api UI to applied Clean Architecture, Entity Framework, Auto Mapper.</h4></p>
 
 #### Setups:
-1- Get new fork
-2- can run on any cpu X64, X86.
-2- Open on Visual Studio IIS , add Server Sql name and run.
+##### 1- Get new fork
+##### 2- can run on any cpu X64, X86.
+##### 3- Open on Visual Studio IIS , add Server Sql name and run.
 
 #### Layer and Folder Structure:
 
