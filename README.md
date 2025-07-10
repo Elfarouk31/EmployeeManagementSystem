@@ -110,18 +110,25 @@ POST {{host}}/api/Employee/GetAllEmployeesLogs
 }
 ```
 
-### Get All Employees Logs
+### Create Employee
 
 ```js
-POST {{host}}/api/Employee/GetAllEmployeesLogs
+POST {{host}}/api/Employee/CreateEmployee
 ```
 
-### Get All Employees Logs Request
+### Create Employee Request
 
-```json
+```js
+{
+  "name": "mohamed",
+  "email": "mohamed@example.com",
+  "departmentId": 2,
+  "hireDate": "2025-07-10T17:35:57.489Z",
+  "status": "active"
+}
 ```
 
-### Get All Employees Logs Response
+### Create Employee Response
 
 ```js
 200 OK
@@ -129,30 +136,12 @@ POST {{host}}/api/Employee/GetAllEmployeesLogs
 
 ```js
 {
-    {
-        "id": 2,
-        "name": "ahmed",
-        "email": "ahmed@example.com",
-        "departmentId": 1,
-        "hireDate": "2025-07-10T13:13:51.528",
-        "status": "active",
-        "createdDate": "2025-07-10T16:14:16.364715",
-        "updatedDate": null,
-        "deletedDate": "2025-07-10T16:18:12.0410741",
-        "department": null
-    },
-    {
-        "id": 2,
-        "name": "ahmed",
-        "email": "ahmed@example.com",
-        "departmentId": 1,
-        "hireDate": "2025-07-10T13:13:51.528",
-        "status": "active",
-        "createdDate": "2025-07-10T16:14:16.364715",
-        "updatedDate": null,
-        "deletedDate": "2025-07-10T16:18:12.0410741",
-        "department": null
-    }
+  "name": "mohamed",
+  "email": "mohamed@example.com",
+  "departmentId": 2,
+  "hireDate": "2025-07-10T17:35:57.489Z",
+  "status": "active",
+  "id": 3
 }
 ```
 
