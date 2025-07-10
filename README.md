@@ -1,14 +1,19 @@
 # Employee Management API.
 
 <p>Developed Using <h4>C#, ASP.NET Core Framework 8.0 with a RESTful API
-and Swagger api UI to applied Clean Architecture, Entity Framework, Auto Mapper.</h4></p>
+and Swagger api UI to applied Clean Architecture, Repository Patern, Services, Dependence Injection, Entity Framework, Auto Mapper.</h4></p>
 
 #### Setups:
 ##### 1- Get new fork
 ##### 2- can run on any cpu X64, X86.
 ##### 3- Open on Visual Studio IIS , add Server Sql name and run.
+##### 4- in Package Manager Console runn
+```js
+update-database
+```
 
-#### Layer and Folder Structure:
+
+#### Layers and Folders Structure:
 
 - [EmployeeManagement.API]
     - .[controllrs]
@@ -23,17 +28,17 @@ and Swagger api UI to applied Clean Architecture, Entity Framework, Auto Mapper.
 - .[EmployeeManagement.Domain]
     - .[Entities]
       
--. [EmployeeManagement.Persistence]
-    -- .[Repository]
-    -- .[DbContextModel]
-    -- .[Migrationn]
+- .[EmployeeManagement.Persistence]
+    - .[Repository]
+    - .[DbContextModel]
+    - .[Migrationn]
 
 ## Description.
 #### Filter:
-Api has filter end point "GetByHiringDateRange", "GetByStatus'active/suspended'" and "GetByDepartment".
+Api has filters End point "GetByHiringDateRange" to filte by Hiring Date Range, "GetByStatus'active/suspended'" to filte by Status active or suspend and "GetByDepartment" to filte by Department.
 
 #### Sorting:
-Api has sorting end point "GetAllSortingByNameDescOrASC" take type = 'Desc' Or 'ASC' and "GetAllSortingByHiringDateDescOrASC" take type = 'Desc' Or 'ASC.
+Api has sorting End point "GetAllSortingByNameDescOrASC" take type = 'Desc' Or 'ASC' and "GetAllSortingByHiringDateDescOrASC" take type = 'Desc' Or 'ASC.
 
 #### Log:
 make log in Employee table record Created date in creation and Update for each Update update date and add delete date when deleted.
