@@ -1,1 +1,16 @@
-..
+# Employee Management API
+
+- [Employee Management API](#employee-management-api)
+  - [Employee](#Employee)
+    - [GetAllEmployeesLogs](#GetAllEmployeesLogs)
+    - [GetAllEmployees](#GetAllEmployees)
+    - [GetEmployeeById](#GetEmployeeById)
+    - [GetEmployeeByName](#GetEmployeeByName)
+    - [CreateEmployee](#CreateEmployee)
+    - [GetByDepartment](#GetByDepartment)
+    - [GetByStatus'active/suspended'](#GetByStatus'active/suspended')
+    - [GetByHiringDateRange](#GetByHiringDateRange)
+    - [GetAllSortingByNameDescOrASC](#GetAllSortingByNameDescOrASC)
+    - [GetAllSortingByHiringDateDescOrASC](#GetAllSortingByHiringDateDescOrASC)
+    - [UpdateEmployee](#UpdateEmployee)
+    - [DeleteEmployee](#DeleteEmployee)
