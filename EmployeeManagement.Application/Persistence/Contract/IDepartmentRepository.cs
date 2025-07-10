@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmployeeManagement.Infrastructure.Repository.Interface
+namespace EmployeeManagement.Application.Persistence.Contract
 {
-	interface IDepartmentRepository : IGenericRepository<Department>
+	public interface IDepartmentRepository : IGenericRepository<Department>
 	{
 	}
 }

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmployeeManagement.Application.Services.Employee
+namespace EmployeeManagement.Application.Dto.Common
 {
-	public interface IEmployeeService
+	public class BaseDto
 	{
-		
+		public int Id { get; set; }
 	}
 }

@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmployeeManagement.Infrastructure.Repository.Interface
+namespace EmployeeManagement.Application.Persistence.Contract
 {
-	interface IEmployeeRepository : IGenericRepository<Employee>
+	public interface IEmployeeRepository : IGenericRepository<Employee>
 	{
 		Task<Employee> GetByNameAsync(string name);
 		Task<List<Employee>> GetByDepartmentAsync(string name);

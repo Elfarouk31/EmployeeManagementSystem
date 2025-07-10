@@ -1,6 +1,4 @@
-﻿using EmployeeManagement.Infrastructure.Repository.Implementation;
-using EmployeeManagement.Infrastructure.Repository.Interface;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -14,10 +12,7 @@ namespace EmployeeManagement.Infrastructure
 	{
 		public static IServiceCollection ConfigurationInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
 		{
-			services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-			services.AddScoped<IEmployeeRepository, EmployeeRepository>();
-			services.AddScoped<IDepartmentRepository, DepartmentRepository>();
-
+	
 			return services;
 		}
 	}

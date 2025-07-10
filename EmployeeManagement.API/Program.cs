@@ -1,13 +1,18 @@
-using EmployeeManagement.Infrastructure.DbContextModel;
+using EmployeeManagement.Persistence.DbContextModel;
 using Microsoft.EntityFrameworkCore;
-using EmployeeManagement.Infrastructure;
+using EmployeeManagement.Persistence;
+using EmployeeManagement.Application;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.ConfigurationInfrastructureServices(builder.Configuration);
 
 builder.Services.AddControllers();
+
+builder.Services.ConfigurationApplicationServices();
+
+builder.Services.ConfigurationPersistenceServices(builder.Configuration);
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

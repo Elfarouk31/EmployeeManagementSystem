@@ -1,13 +1,13 @@
-﻿using EmployeeManagement.Domain.Entities;
-using EmployeeManagement.Infrastructure.DbContextModel;
-using EmployeeManagement.Infrastructure.Repository.Interface;
+﻿using EmployeeManagement.Application.Persistence.Contract;
+using EmployeeManagement.Domain.Entities;
+using EmployeeManagement.Persistence.DbContextModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmployeeManagement.Infrastructure.Repository.Implementation
+namespace EmployeeManagement.Persistence.Repository.Implementation
 {
 	public class DepartmentRepository : GenericRepository<Department> , IDepartmentRepository
 	{

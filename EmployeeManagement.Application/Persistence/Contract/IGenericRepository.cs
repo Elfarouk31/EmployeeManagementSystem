@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmployeeManagement.Infrastructure.Repository.Interface
+namespace EmployeeManagement.Application.Persistence.Contract
 {
-	interface IGenericRepository<T> where T : class
+	public interface IGenericRepository<T> where T : class
 	{
 		Task<T> GetByIdAsync(int id);
 		Task<List<T>> GetAllAsync();
