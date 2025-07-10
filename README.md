@@ -110,21 +110,18 @@ POST {{host}}/api/Employee/GetAllEmployeesLogs
 }
 ```
 
-### Get Employee By Id
+### Get All Employees Logs
 
 ```js
-POST {{host}}/api/Employee/GetEmployeeById
+POST {{host}}/api/Employee/GetAllEmployeesLogs
 ```
 
-### Get Employee By Id Request
+### Get All Employees Logs Request
 
 ```json
-{
-    "id": 2
-}
 ```
 
-### Get Employee By Id Response
+### Get All Employees Logs Response
 
 ```js
 200 OK
@@ -132,17 +129,31 @@ POST {{host}}/api/Employee/GetEmployeeById
 
 ```js
 {
-    "id": 2,
-    "name": "ahmed",
-    "email": "ahmed@example.com",
-    "departmentId": 1,
-    "hireDate": "2025-07-10T13:13:51.528",
-    "status": "active",
-    "createdDate": "2025-07-10T16:14:16.364715",
-    "updatedDate": null,
-    "deletedDate": "2025-07-10T16:18:12.0410741",
-    "department": null
-  }
+    {
+        "id": 2,
+        "name": "ahmed",
+        "email": "ahmed@example.com",
+        "departmentId": 1,
+        "hireDate": "2025-07-10T13:13:51.528",
+        "status": "active",
+        "createdDate": "2025-07-10T16:14:16.364715",
+        "updatedDate": null,
+        "deletedDate": "2025-07-10T16:18:12.0410741",
+        "department": null
+    },
+    {
+        "id": 2,
+        "name": "ahmed",
+        "email": "ahmed@example.com",
+        "departmentId": 1,
+        "hireDate": "2025-07-10T13:13:51.528",
+        "status": "active",
+        "createdDate": "2025-07-10T16:14:16.364715",
+        "updatedDate": null,
+        "deletedDate": "2025-07-10T16:18:12.0410741",
+        "department": null
+    }
+}
 ```
 
 
